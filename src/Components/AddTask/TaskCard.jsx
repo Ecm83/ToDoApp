@@ -11,16 +11,16 @@ export default function TaskCard({ task }) {
   return (
     <Card sx={{ minWidth: 275 }}>
       <CardContent>
-        <Typography sx={{ fontSize: 14 }} color="secondary" gutterBottom>
+        <Typography sx={{ fontSize: 14 }} color="primary" gutterBottom>
           {task.deathLine}
           {/* {console.log('Log de deathLine es:', task.deathLine)} */}
         </Typography>
 
         <Typography variant="body2">
           {task.title}
-          <br />
+          <hr style={{ border: '1px solid #ed9600' }} />
           {task.description}
-          <br />
+          <hr style={{ border: '1px solid #ed9600' }} />
           {task.status}
         </Typography>
       </CardContent>

@@ -9,7 +9,7 @@ function App() {
     <>
       <MainAppBar />
       <Container>
-        <Box sx={{ width: '50%' }}>
+        <Box sx={{ width: '33%' }}>
           <CreateTaskCard />
         </Box>
       </Container>

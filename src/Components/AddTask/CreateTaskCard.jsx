@@ -75,7 +75,7 @@ export default function CreateTaskCard() {
   }
 
   return (
-    <Container sx={{ display: 'flex', gap: '75px' }}>
+    <Box sx={{ display: 'flex', gap: '100px', my: 5 }}>
       <Box
         sx={{
           display: 'flex',
@@ -178,15 +178,15 @@ export default function CreateTaskCard() {
         </div>
       </Box>
 
-      {/* --------------------------Add Task Button---------------------- */}
+      {/* --------------------------Add Card---------------------- */}
 
-      <Box>
+      <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: '5px' }}>
         {taskList.length === 0 ? (
           <Typography>No hi ha feines a mostrar</Typography>
         ) : (
           taskList.map((task, index) => <TaskCard task={task} key={index} />)
         )}
       </Box>
-    </Container>
+    </Box>
   )
 }
